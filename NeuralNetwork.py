@@ -116,10 +116,3 @@ def train(X, Y, layer_dims, epochs, lr):
         
     return params, cost_history
 
-# Example data and parameters (replace with actual data and parameters)
-X = np.random.randn(10, 100)  # Example input data (10 features, 100 samples)
-Y = np.random.randn(1, 100)   # Example target data (1 output, 100 samples)
-layer_dims = [10, 5, 1]       # 3-layer network: 10 -> 5 -> 1
-epochs = 1000                 # Number of training epochs
-learning_rate = 0.01          # Learning rate\
-params, cost_history = train(X, Y, layer_dims, epochs, learning_rate)
