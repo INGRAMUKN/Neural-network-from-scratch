@@ -12,14 +12,27 @@ A neural network is a machine learning model that draws inspiration from the hum
 --------------------------------------------------------------------
 Here is an AI generated data example to check out how the project works: 
 
-# Example data and parameters (replace with actual data and parameters)
-X = np.random.randn(10, 100)  # Example input data (10 features, 100 samples)
-Y = np.random.randn(1, 100)   # Example target data (1 output, 100 samples)
-layer_dims = [10, 5, 1]       # 3-layer network: 10 -> 5 -> 1
-epochs = 1000                 # Number of training epochs
-learning_rate = 0.01          # Learning rate
+X = np.array([[0, 0, 1, 1], [0, 1, 0, 1]])
+Y = np.array([[0, 1, 1, 0]])
+layer_dims = [2, 4, 1]
 
-# Train the model
+epochs = 10000
+learning_rate = 0.1
+
 params, cost_history = train(X, Y, layer_dims, epochs, learning_rate)
 
+# Plot the cost history
+plt.plot(cost_history)
+plt.xlabel('Epochs')
+plt.ylabel('Cost')
+plt.title('Training Cost over Epochs')
+plt.show()
+
+# Make predictions
+Y_pred, _ = forward_prop(X, params)
+Y_pred = (Y_pred > 0.5).astype(int)
+
+# Calculate accuracy
+accuracy = np.mean(Y_pred == Y)
+print(f"Accuracy: {accuracy * 100:.2f}%")
 everything else is in NeuralNetwork.py file, thank you.
