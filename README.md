@@ -4,11 +4,13 @@ I've created a neural network using nothing but NumPy and a lot of caffeine. It'
 Presentation of the project:
 A neural network is a machine learning model that draws inspiration from the human brain. It uses interconnected nodes, or neurons, in a layered structure that mirrors how our brains work. I was fascinated by this concept and curious about how it could be put into practice. So, I started digging into the details, learning about the different steps neural networks go through. I studied the math behind them and decided to build one from scratch to put my knowledge to the test.
 -------------------------------------------------------------------
-- Forward prop? Check.
-- Backprop? You bet.
-- Gradient descent? Of course!
+The goal of this code is to minimize the cost as much as possible the closer to 0 the better
+-------------------------------------------------------------------
+- Forward prop
+- Backprop
+- Gradient descent
 - Sigmoid activation (because why make life easy with ReLU)
-- Cross-entropy loss, for when you really want to punish your network's mistakes
+- Cross-entropy loss, to punish your network's mistakes
 --------------------------------------------------------------------
 Here is an AI generated data example to check out how the project works: 
 
